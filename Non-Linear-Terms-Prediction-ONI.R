@@ -1,7 +1,7 @@
 library(ggplot2)
 
 ## Load Model ##
-# m21_results <- readRDS("/n/holyscratch01/mcastro_lab/Users/nicholasarisco/PNAS -- Deforestation Paper/Sensitivity Analysis Placeholder/M21 Spec/m21_model.rds")
+# m21_results <- readRDS("m21_model.rds")
 
 # Create an empty data frame to store the results
 median_table <- data.frame(Index = numeric(37), Value = numeric(37))
@@ -73,5 +73,5 @@ p
 
 ONI_results$ONI <- sort(unique(d1_full$ONI))
 
-write.csv(ONI_results,file="/n/home04/nicholasarisco/PNAS -- Deforestation Paper/Predicting nonlinear terms/ONI_results.csv")
+write.csv(ONI_results,file="ONI_results.csv")
 
