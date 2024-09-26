@@ -1,7 +1,7 @@
 library(ggplot2)
 
 ## Load Model ##
-# m21_results <- readRDS("/n/holyscratch01/mcastro_lab/Users/nicholasarisco/PNAS -- Deforestation Paper/Sensitivity Analysis Placeholder/M21 Spec/m21_model.rds")
+# m21_results <- readRDS("m21_model.rds")
 
 # Create an empty data frame to store the results
 median_table <- data.frame(Index = numeric(20), Value = numeric(20))
@@ -71,4 +71,4 @@ p
 (max(na.omit(d1_full$p_tot))-min(na.omit(d1_full$p_tot)))/24
 prec_results$p_tot <- seq(0,max(na.omit(d1_full$p_tot)),5.094178)
 
-write.csv(prec_results,file="/n/home04/nicholasarisco/PNAS -- Deforestation Paper/Predicting nonlinear terms/prec_results.csv")
+write.csv(prec_results,file="prec_results.csv")
