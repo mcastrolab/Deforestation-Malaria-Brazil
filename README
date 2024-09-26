@@ -1,2 +1,3 @@
 # The files enclosed require sequential running in order for proper functionality. The model results in 'Global-Model-Fitting-PNAS-Deforestation-inla.R' need to be saved as a .rds file for the non-linear terms predictions to function properly.
 # All other files can be run independently.
+# Data must be unzipped from the folder model data folder.
